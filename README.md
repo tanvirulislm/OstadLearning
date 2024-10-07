@@ -25,4 +25,4 @@ To get started with the code in this repository:
 
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/tanvirulislm/OstadLearning
