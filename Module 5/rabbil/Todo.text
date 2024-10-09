@@ -1,0 +1,13 @@
+1. Variable Scope In Function 
+    - Local Scope
+    - Global Scope
+    - Superglobals
+
+2. Recursive Function 
+
+3. Divide Large Function Into Smaller 
+    -> Login task 
+    -> Email Validation, 
+    -> Password Validation
+    -> Email Password Matching 
+    -> User Login
