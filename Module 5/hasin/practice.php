@@ -55,3 +55,9 @@ for($i =0; $i<10; $i++){
   $veryOld = $old;
 
 }
+
+echo "\n";
+
+for($i = 0; $i < 10; $i++){
+  echo "5 x $i = " . 5*$i . "\n";
+}
