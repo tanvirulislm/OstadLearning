@@ -58,6 +58,9 @@ for($i =0; $i<10; $i++){
 
 echo "\n";
 
-for($i = 0; $i < 10; $i++){
-  echo "5 x $i = " . 5*$i . "\n";
+function serve($foodType = "Orange", $numberOfItems = "1"){
+  echo "$numberOfItems $foodType has/have been served"; 
 }
+$ft = "apple";
+$n = "1";
+serve();
