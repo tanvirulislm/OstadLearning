@@ -28,8 +28,9 @@ echo PHP_EOL;
 echo $invoice['invoiceDate'];
 echo PHP_EOL;
 echo "---------------------------------------------------------------";
+echo PHP_EOL;
 foreach($invoice['invoiceItems'] as $item){
-    // echo $item['item'] . " - " . $item['quantity'] . " - " . $item['price']; //string concatenation
+   echo $item['item'] . " - " . $item['quantity'] . " - " . $item['price']; //string concatenation
     echo "{$item['item']} - {$item['quantity']} - {$item['price']}";
     echo PHP_EOL;
 }
