@@ -1,5 +1,5 @@
 <?php
-
+// fscanf(STDIN, "%s", $s);
 $s = "Hello";
 
 function removeDuplicate($line){
