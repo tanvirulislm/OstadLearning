@@ -1,0 +1,69 @@
+Class 01: 
+-------------------
+1. What is OOP 
+2. Framework OOP Driven 
+3. Why OOP  
+    - Modularity
+    - Reusability
+    - Encapsulation
+    - Polymorphism
+    - Collaboration
+4. Class 
+    - What is class 
+    - Why Class 
+    - How Class
+5. Object
+    - What is Object 
+    - Why Object 
+    - How Object works
+
+6. Constructor
+    - Special Type Method
+    - Auto Executed
+
+
+
+Class 02
+-------------------
+1. Static Variable 
+    - Direct Access From Class, No Need of Object
+2. Static Method 
+    - Direct Access From Class, No Need of Object
+
+3. Inheritance Parent Child Relation 
+    - What is Inheritance
+    - extends keyword used to inherit
+4. Abstract Classes
+    - You Kill Your Father Class
+
+5. Method overriding 
+    - When child changes his parents variable or function
+
+7. Final Keyword  
+    - If father Final his variable or function
+
+
+8. Inheritance Static Properties
+    - Fathers Static Power Will Automatically goes to his Son
+
+
+
+9. Inheritance Constructor
+    - If Father has but son has not
+    - Both has
+
+10. Parent Keyword
+    - If Son Request Form Father
+    - Son Also Can Request For Fathers Constructor;
+
+
+
+11. Method overloading 
+    - Same Method But Several Params in Several Times
+    - Same Method But Several Name in Several Times
+
+
+12. Polymorphism
+
+
+13. Interface 
