@@ -1,9 +1,6 @@
 <?php
 session_start();
-if(!isset($_POST['name'])){
-    header("location:login.php");
-}
-$user = $_SESSION['user'];
+$user = $_SESSION['name'];
 
 ?>
 <!DOCTYPE html>
