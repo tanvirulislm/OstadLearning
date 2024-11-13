@@ -1,0 +1,34 @@
+# Tools: 
+- MySQL Installation XAMMP+PHPMyAdmin
+- VS Code Database Extension
+
+# Basic: 
+- What is Database?
+- What is Table ?
+- What is row, column? 
+- What is GUI MySQL
+
+# Basic Query (CRUD)
+- READ->SELECT 
+- DELETE->REMOVE
+- CREATE->INSERT
+- UPDATE->MODIFY
+
+
+# How to Create Table in Database
+- Create a employee table 
+- Insert some demo data 
+
+
+# SQL Foundamentals 
+
+# SQL String Functions
+
+# Date Time Functions
+
+# Aggregation Functions
+
+# Understanding Relationship Signs
+
+
+# Lets Design Inventory DB
