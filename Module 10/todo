@@ -1,0 +1,62 @@
+1. E-commerce Systems
+Entities: Users, Products, Orders, Payments, Customers, Invoices
+Relationships: One-to-Many (1
+) between Users and Products, Many-to-Many (N
+) between Products and Orders (through a junction table like Invoice Products).
+Complexities: Handling multiple addresses for customers, tracking inventory levels, applying discounts or tax rates, and integrating payment gateways.
+
+
+2. Enterprise Resource Planning (ERP) Systems
+Entities: Users, Departments, Employees, Projects, Tasks, Resources, Suppliers, Orders, Invoices
+Relationships: Many-to-Many (N
+) between Employees and Projects, One-to-Many (1
+) between Suppliers and Orders.
+Complexities: Managing complex workflows, automating processes like procurement and resource allocation, and maintaining multi-level permissions.
+
+
+3. Customer Relationship Management (CRM) Systems
+Entities: Users, Customers, Leads, Opportunities, Contacts, Sales
+Relationships: One-to-Many (1
+) between Users and Customers, Many-to-Many (N
+) between Opportunities and Contacts.
+Complexities: Tracking sales stages, handling multiple interactions with customers, analyzing lead conversions.
+
+
+4. Human Resources Management Systems (HRMS)
+Entities: Users, Employees, Departments, Salaries, Payroll, Time Logs, Benefits
+Relationships: One-to-Many (1
+) between Employees and Departments, Many-to-Many (N
+) between Employees and Benefits.
+Complexities: Payroll calculations, tax calculations, employee performance tracking, integrating attendance data.
+
+
+5. Learning Management Systems (LMS)
+Entities: Users, Students, Courses, Instructors, Enrollments, Grades
+Relationships: Many-to-Many (N
+) between Students and Courses, One-to-Many (1
+) between Instructors and Courses.
+Complexities: Managing course prerequisites, grading, attendance, and certifications.
+
+
+6. Supply Chain Management (SCM) Systems
+Entities: Suppliers, Products, Orders, Shipments, Warehouses, Customers
+Relationships: One-to-Many (1
+) between Suppliers and Products, Many-to-Many (N
+) between Orders and Products.
+Complexities: Managing stock levels across multiple warehouses, handling supplier lead times, optimizing delivery routes.
+
+
+7. Healthcare Systems
+Entities: Patients, Doctors, Appointments, Treatments, Prescriptions, Hospitals, Staff
+Relationships: One-to-Many (1
+) between Doctors and Appointments, Many-to-Many (N
+) between Patients and Treatments.
+Complexities: Patient history management, managing multiple prescriptions and treatments, appointment scheduling with doctors.
+
+
+8. Content Management Systems (CMS)
+Entities: Users, Articles, Comments, Categories, Tags, Media Files
+Relationships: One-to-Many (1
+) between Users and Articles, Many-to-Many (N
+) between Articles and Tags.
+Complexities: Handling media files, categorization and tagging systems, user roles (admin, editor, viewer).
