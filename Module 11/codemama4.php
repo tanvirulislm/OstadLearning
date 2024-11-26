@@ -3,7 +3,7 @@
 
 
 // Read a float number from input
-fscanf(STDIN, "%f", $celsius);
+// fscanf(STDIN, "%f", $celsius);
 
 // Convert Celsius to Fahrenheit
 $fahrenheit = $celsius * (9 / 5) + 32;
