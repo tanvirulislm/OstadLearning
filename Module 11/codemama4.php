@@ -11,4 +11,3 @@ $fahrenheit = $celsius * (9 / 5) + 32;
 // Output the Fahrenheit value with 2 decimal points
 echo "The temperature in Fahrenheit is: " . number_format($fahrenheit, 2);
 
-
