@@ -1,35 +1,41 @@
 <?php
 
-$input = trim(fgets(STDIN));
-$arr = explode(" ", $input);
-$n = count($arr);
-
-$left = 0;
-$right = $n - 1;
-$min = PHP_INT_MAX;
-
-while ($left <= $right) {
-    // If array is already sorted
-    if ($arr[$left] <= $arr[$right]) {
-        $min = min($min, $arr[$left]);
-        break;
+function findMinInRotatedSortedArray($arr) {
+    $n = count($arr);
+    
+    if ($n == 0) {
+        return null; // If array is empty
     }
     
-    $mid = $left + floor(($right - $left) / 2);
-    $min = min($min, $arr[$mid]);
+    $left = 0;
+    $right = $n - 1;
     
-    // Check which half is sorted and contains minimum
-    if ($arr[$left] <= $arr[$mid]) {
-        // Left half is sorted
-        // Compare with first element
-        $min = min($min, $arr[$left]);
-        $left = $mid + 1;
-    } else {
-        // Right half is sorted
-        $min = min($min, $arr[$mid + 1]);
-        $right = $mid;
+    while ($left < $right) {
+        $mid = intdiv($left + $right, 2); // Efficient integer division
+
+        // If the middle element is greater than the right element, 
+        // the minimum is in the right half.
+        if ($arr[$mid] > $arr[$right]) {
+            $left = $mid + 1;
+        } else {
+            // If the middle element is less or equal to the right element, 
+            // the minimum could be at mid or to the left of mid.
+            $right = $mid;
+        }
     }
+    
+    // After the loop, left will point to the minimum element
+    return $arr[$left];
 }
 
-echo $min;
+// Input handling
+$n = intval(trim(fgets(STDIN)));  // Size of array
 
+if ($n > 0) {
+    $arr = array_map('intval', explode(' ', trim(fgets(STDIN))));  // Elements of the array
+
+    // Find and echo the minimum element
+    echo findMinInRotatedSortedArray($arr) . "\n";
+}
+
+?>
