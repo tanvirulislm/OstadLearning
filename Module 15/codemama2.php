@@ -3,7 +3,7 @@
 $line1 = trim(fgets(STDIN));
 $line2 = trim(fgets(STDIN));
 
-$n = int($line1);
+$n = (int)$line1;
 
 $numbers = explode(" ", $line2);
 
