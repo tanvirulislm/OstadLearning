@@ -1,37 +1,22 @@
 <?php
-// Prompt the user to enter the array elements
-echo "Enter array elements separated by spaces: ";
 
+$line1 = trim(fgets(STDIN));
+$line2 = trim(fgets(STDIN));
 
-$input = trim(fgets(STDIN));
+$n = (int)$line1;
 
+$numbers = explode(" ", $line2);
 
-$array = array_map('intval', explode(' ', $input));
+$posCount = 0;
+$negCount = 0;
 
-
-$positiveSet = [];
-$negativeSet = [];
-
-
-foreach ($array as $value) {
-    if ($value > 0) {
-        
-        $positiveSet[$value] = true;
-    } elseif ($value < 0) {
-       
-        $negativeSet[$value] = true;
+for($i = 0; $i < $n; $i++) {
+    if($numbers[$i] > 0) {
+        $posCount++;
+    } else if($numbers[$i] < 0) {
+        $negCount++;
     }
- 
 }
 
-
-$positiveCount = count($positiveSet);
-$negativeCount = count($negativeSet);
-
-
-if ($positiveCount > $negativeCount) {
-    echo "positivity";
-} else {
-    echo "negativity";
-}
+print $posCount > $negCount ? "Positivity" : "Negativity";
 
