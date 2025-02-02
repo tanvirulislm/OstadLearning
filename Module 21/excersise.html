@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Beautiful Design</title>
-</head>
-<body class="bg-gray-50 text-gray-800">
+  </head>
+  <body class="bg-gray-50 text-gray-800">
     <header class="bg-white shadow-md px-8 py-4 flex items-center justify-between">
-        <h1 class="text-3xl font-bold text-gray-700">Exercise</h1>
-        <a href="#" class="text-lg text-blue-600 hover:text-blue-800 underline transition duration-300">
-            ← Back
-        </a>
+      <h1 class="text-3xl font-bold text-gray-700">Exercise</h1>
+      <a href="#" class="text-lg text-blue-600 hover:text-blue-800 underline transition duration-300"> ← Back </a>
     </header>
-    
+
     <main class="container mx-auto mt-8 p-6 bg-white shadow-md rounded-lg">
-        
-        <button class="text-lg bg-blue-600 px-6 py-3 text-white rounded" onclick="">Show me</button>
+      <button class="text-lg bg-blue-600 px-6 py-3 text-white rounded" id="btn">Show me</button>
+      <!-- <div id="quote" class="mt-6 p-4 border-l-4 border-blue-600 bg-gray-100 rounded-lg shadow">
+      <p class="text-gray-800 text-xl italic" id="quoteText"></p>
+      <span class="text-gray-600 block mt-2 text-right" id="quoteAuthor">— </span>
+      </div> -->
     </main>
 
-
     <script>
-
-        function myFun(){
-            var URL=""
-        }
-        
+      function myFun() {
+        axios.get("https://api.quotable.io/random").then((res) => {
+          console.log(res.data);
+        });
+      }
+      document.getElementById("btn").addEventListener("click", myFun);
     </script>
-</body>
+  </body>
 </html>
